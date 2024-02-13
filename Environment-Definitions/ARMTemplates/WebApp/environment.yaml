@@ -3,4 +3,16 @@ summary: Deploys Web App on ARM
 description: Deploys an Azure Web App without a data store
 runner: ARM
 templatePath: azuredeploy.json
-parameters:- id: "location"  name: "location"  description: "Location to deploy the environment resources"  default: "[resourceGroup().location]"  type: "string"  required: false- id: "name"  name: "name"  description: "Name of the Web App "  default: ""  type: "string"  required: false
+parameters:
+- id: "location" 
+  name: "location"  
+  description: "Location to deploy the environment resources"  
+  default: "[resourceGroup().location]" 
+  type: "string"  
+  required: false 
+- id: "name"  
+  name: "name"  
+  description: "Name of the Web App "  
+  default: ""  
+  type: "string"  
+  required: false
